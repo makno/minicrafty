@@ -43,7 +43,7 @@ class Resourcetype{
 	}
 	
 	public static function getInitialElements(){
-		return Resourcetype::$xml->query("//ressource[@initial]");
+		return Resourcetype::$xpath->query("//ressource[@initial]");
 	}
 	
 	// OBJECT

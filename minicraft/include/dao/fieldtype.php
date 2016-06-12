@@ -36,9 +36,7 @@ class Fieldtype{
 			$field->picture = IConfiguration::MC_LOC_IMG_FIELDS."/".Fieldtype::$xpath->query("bild/@datei", $fieldXml)->item(0)->nodeValue;
 			if(Fieldtype::$xpath->query("@initial", $fieldXml)->length){
 				$field->initial = Fieldtype::$xpath->query("@initial", $fieldXml)->item(0)->nodeValue;
-				if($field->initial > 0){
-					Fieldtype::$listInitialFields[] = $field;
-				}
+				Fieldtype::$listInitialFields[] = $field;
 			}
 			if(Fieldtype::$xpath->query("@maximum", $fieldXml)->length)
 				$field->maximum = Fieldtype::$xpath->query("@maximum", $fieldXml)->item(0)->nodeValue;

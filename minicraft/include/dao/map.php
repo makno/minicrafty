@@ -153,7 +153,7 @@ class Map{
 		$ressourcen = $this->dom->createElement("ressourcen");
 		
 		// Alle Element, deren Attribut initial ist holen
-		$elementsInitial = $this->model->getResources()->getInitialElements();
+		$elementsInitial = Resourcetype::getInitialElements();
 		// Elemente durchgehen und einen neuen Array erstellen mit id => anzahl, $arrayChecker wir implizit erstellt!
 		// (Anmerkung: Feld Id und wie oft das Feld maximal in der Karte vorkommmen darf ...)
 		foreach($elementsInitial as $element){
@@ -166,16 +166,17 @@ class Map{
 		$elementMap->appendChild($ressourcen);
 		
 		// Alle Element, deren Attribut initial ist holen
-		$elementsInitial = $this->model->getFields()->getInitialElements();
+		$elementsInitial = Fieldtype::getInitialFields();
 		// Elemente durchgehen und einen neuen Array erstellen mit id => anzahl, $arrayChecker wir implizit erstellt!
 		// (Anmerkung: Feld Id und wie oft das Feld maximal in der Karte vorkommmen darf ...)
+		$arrayBaseFields = array();
 		foreach($elementsInitial as $element){
-			$id = $element->getAttribute('id');
-			$anzahl = (int) $element->getAttribute('initial');
+			$id = $element->getId();
+			$anzahl = (int) $element->getInitial();
 			if($anzahl==0)
 				$arrayBaseFields[$id] = $anzahl;
-				else
-					$arraySpecialFields[$id] = $anzahl;
+			else
+				$arraySpecialFields[$id] = $anzahl;
 		}
 		// Speichern der Basisfelder in jedes einzelne Element
 		$number_of_fields = $config->getHeight() * $config->getWidth();
