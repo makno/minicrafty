@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Elemente -->
+<!ELEMENT karte (spieler,ressourcen,reihe*)>
+
+<!ELEMENT spieler (name,id,zeitstempel)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT zeitstempel (#PCDATA)>
+
+<!ELEMENT ressourcen (ressource*)>
+<!ELEMENT ressource (#PCDATA)>
+
+<!ELEMENT reihe (feld*)>
+<!ELEMENT feld (#PCDATA)>
+
+<!ATTLIST ressource id CDATA #REQUIRED>

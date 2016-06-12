@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT felder (feld*)>
+<!ELEMENT feld (name,bild+,ressource*,kosten?,upgrade*)>
+<!ELEMENT bild EMPTY>
+<!ELEMENT ressource (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT upgrade (#PCDATA)>
+
+<!ELEMENT kosten (ressource+)>
+
+<!ATTLIST felder pfad CDATA #REQUIRED>
+<!ATTLIST feld id CDATA #REQUIRED initial CDATA #IMPLIED maximum CDATA #IMPLIED>
+<!ATTLIST bild datei CDATA #REQUIRED>
+
+<!ATTLIST ressource id CDATA #REQUIRED>
+
+

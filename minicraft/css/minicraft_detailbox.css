@@ -1,0 +1,75 @@
+/*
+	minicraft_detailbox.css
+*/
+
+div.field {
+	position: relative; 
+	display: block;
+	width:128px;
+}
+
+div.field div.field_text{
+	position: absolute;
+	bottom:0;
+	right:0;
+	color:#000;
+	font-size: 14px;
+	margin:3px;
+	text-align:right;
+	vertical-align: bottom;
+}
+
+div.field div.field_text span{
+	bottom:0;
+	right:0;
+	color:#000;
+	font-size: 16px;
+	margin:3px;
+	text-align:right;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+div.field_options {
+	position: relative; 
+	margin-top: 15px;
+	display: block;
+}
+
+div.field_options h1 {
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 0px;
+	font-size: 22px;
+	font-family: Calibri, Arial, sans serif;
+	font-weight: normal;
+	color; #000:
+}
+
+#mcUpgrades {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;	
+}
+
+.mcUpgrade {
+	margin-right: 10px;
+}
+
+.mcUpgradeCosts {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 5px;	
+}
+
+.mcUpgradeRessource{
+	margin-right: 2px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+

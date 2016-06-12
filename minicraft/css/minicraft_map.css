@@ -1,0 +1,110 @@
+/*
+karte.css
+*/
+
+html, body {
+	margin:10px; padding:10px;
+}
+
+.wrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+  	align-items: flex-start;
+ }
+
+/* MAP */
+
+.mc_map {
+	margin: 0px;
+	margin-top: 5px;
+	margin-bottom:10px;
+	margin-right: 10px;
+	padding: 10px;
+	background: #fff url('../img/gui/bg_paper.png') repeat;
+	border: 1px dashed #704b23; 
+}
+
+.mc_map h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	font-family: Calibri, Arial, sans serif;
+	font-weight: normal;
+	color; #000:
+}
+
+#mcMap {	
+	position: relative;
+	flex-shrink: 0;
+}
+
+#infobox {
+}
+
+.feld {
+	position: absolute;
+}
+
+.tooltip span {
+    display:none;
+}
+.tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
+
+/* BOXES */
+
+.mc_map_box {
+	position:relative;
+	display:block;
+	float:right;
+	margin: 5px;
+	padding: 5px;
+	top: 0px;
+	right: 0px;
+}
+
+.mc_box {
+	height: 100%;
+	margin: 0px;
+	margin-top: 5px;
+	margin-bottom:10px;
+	margin-right: 10px;
+	padding: 5px;
+	background: #fff url('../img/gui/bg_paper.png') repeat;
+	border: 1px dashed #704b23; 
+}
+
+.mc_box_content{
+	margin: 5px;
+	padding: 5px;
+}
+
+.mc_box h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	font-family: Calibri, Arial, sans serif;
+	font-weight: normal;
+	color; #000:
+}
+
+.mc_box p {
+	color: #fff;
+	margin: 10px 10px 0 0;
+	font: bold 60px Calibri, Arial, sans serif;
+}
+
+/* BUTTON */
+
+button {
+	border: 0px dashed #704b23;
+	background:none;
+}
+
+
+

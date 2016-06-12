@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ressourcen SYSTEM "ressourcen.dtd">
+<ressourcen>
+	<!-- Basisstruktur von Reinalter &amp; Pansi -->
+	<ressource id="1" initial="50">
+		<name>Nahrung</name>
+		<bild datei="img/resources/nahrung.png"/>
+	</ressource>
+	<ressource id="2" initial="50">
+		<name>Holz</name>
+		<bild datei="img/resources/holz.png"/>
+	</ressource>
+	<ressource id="3" initial="50">
+		<name>Stein</name>
+		<bild datei="img/resources/stein.png"/>
+	</ressource>
+	<ressource id="4">
+		<name>Pferde</name>
+		<bild datei="img/resources/pferde.png"/>
+	</ressource>
+	<ressource id="5">
+		<name>Eisen</name>
+		<bild datei="img/resources/eisen.png"/>
+	</ressource>
+	<ressource id="6">
+		<name>Bier &amp; Cookies</name><!-- Cookies by Laibacher -->
+		<bild datei="img/resources/bier.png"/>
+	</ressource>
+	<ressource id="7" initial="2000">
+		<name>Platinum</name>
+		<bild datei="img/resources/platinum.png"/>
+	</ressource>
+</ressourcen>

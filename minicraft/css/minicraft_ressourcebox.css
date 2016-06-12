@@ -1,0 +1,28 @@
+/*
+	minicraft_ressourcebox.css
+*/
+
+.mcPlayerRessources{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;	
+	-webkit-justify-content: flex-end;
+   justify-content: flex-end;
+}
+
+.mcPlayerRessource {
+	position: relative; 
+	display: block;
+	/*width:50px;*/
+}
+
+.mcPlayerRessource div.mcPlayerRessourceText{
+	position: absolute;
+	bottom:0;
+	right:0;
+	color:#000;
+	font-size: 14px;
+	margin:3px;
+	text-align:right;
+}

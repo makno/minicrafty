@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT ressourcen (ressource*)>
+<!ELEMENT ressource (name,bild?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT bild EMPTY>
+<!ATTLIST ressource id CDATA #REQUIRED initial CDATA "0">
+<!ATTLIST bild datei CDATA #REQUIRED>
