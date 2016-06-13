@@ -42,7 +42,7 @@
 					<div class="field"> 
 						<span><b>{{fieldCurrent.type.name}}</b> (Id:{{fieldCurrent.id}},Type:{{fieldCurrent.type.id}})</span><br />
 						<img data-ng-if="fieldCurrent.type.picture" data-ng-src="{{{{fieldCurrent.type.picture}}}}" /><br/><br/>
-						<div class="field_text" data-ng-if="fieldCurrent.type.getResources().length"><span data-ng-repeat="res in fieldCurrent.type.getResources()"><img  data-ng-if="res.picture" data-ng-attr-title="{{{{res.name}}}}" data-ng-src="{{{{res.picture}}}}"/>{{res.amount}}</span></div>
+						<div class="mcFieldResource" data-ng-if="fieldCurrent.type.getResources().length"><span class="mcFieldResource" data-ng-repeat="res in fieldCurrent.type.getResources()"><img  data-ng-if="res.picture" data-ng-attr-title="{{{{res.name}}}}" data-ng-src="{{{{res.picture}}}}"/>{{res.amount}}</span></div>
 					</div>
 					<div class="field_options" data-ng-if="fieldCurrent.type.getUpgrades().length">
 						<h1>Bauoptionen</h1>

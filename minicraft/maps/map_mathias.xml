@@ -4,59 +4,59 @@
   <spieler>
     <name>mathias</name>
     <id>$5$saltycrackers!!!$N7UAsehtE7VC1TTTrVp/VyEZni0D.BQmCkhZ.WijS3D</id>
-    <zeitstempel>1465756822</zeitstempel>
+    <zeitstempel>1465806667</zeitstempel>
   </spieler>
-  <ressourcen><ressource id="1">27</ressource><ressource id="2">16</ressource><ressource id="3">49</ressource><ressource id="7">60</ressource><ressource id="4">16</ressource><ressource id="5">10</ressource><ressource id="6">10</ressource></ressourcen>
+  <ressourcen><ressource id="1">286</ressource><ressource id="2">140</ressource><ressource id="3">11</ressource><ressource id="7">125</ressource><ressource id="4">27</ressource><ressource id="5">25</ressource><ressource id="6">22</ressource></ressourcen>
   <reihe>
     <feld>1</feld>
-    <feld>3</feld>
-    <feld>3</feld>
+    <feld>11</feld>
     <feld>6</feld>
-    <feld>3</feld>
+    <feld>6</feld>
+    <feld>6</feld>
     <feld>3</feld>
     <feld>3</feld>
   </reihe>
   <reihe>
-    <feld>3</feld>
-    <feld>3</feld>
+    <feld>12</feld>
+    <feld>6</feld>
     <feld>6</feld>
     <feld>3</feld>
-    <feld>2</feld>
+    <feld>3</feld>
     <feld>3</feld>
     <feld>3</feld>
   </reihe>
   <reihe>
     <feld>9</feld>
-    <feld>2</feld>
-    <feld>3</feld>
     <feld>7</feld>
     <feld>7</feld>
-    <feld>2</feld>
-    <feld>3</feld>
+    <feld>7</feld>
+    <feld>7</feld>
+    <feld>7</feld>
+    <feld>7</feld>
   </reihe>
   <reihe>
     <feld>7</feld>
-    <feld>2</feld>
-    <feld>5</feld>
-    <feld>5</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>5</feld>
+    <feld>7</feld>
+    <feld>8</feld>
+    <feld>8</feld>
+    <feld>7</feld>
+    <feld>7</feld>
+    <feld>10</feld>
   </reihe>
   <reihe>
     <feld>6</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
+    <feld>3</feld>
+    <feld>3</feld>
+    <feld>3</feld>
+    <feld>3</feld>
+    <feld>3</feld>
     <feld>6</feld>
   </reihe>
   <reihe>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
+    <feld>3</feld>
+    <feld>3</feld>
+    <feld>3</feld>
+    <feld>3</feld>
     <feld>3</feld>
     <feld>3</feld>
     <feld>3</feld>

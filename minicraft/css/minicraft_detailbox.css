@@ -17,6 +17,7 @@ div.field div.field_text{
 	margin:3px;
 	text-align:right;
 	vertical-align: bottom;
+	white-space: nowrap;
 }
 
 div.field div.field_text span{
@@ -28,6 +29,7 @@ div.field div.field_text span{
 	text-align:right;
 	font-weight: bold;
 	vertical-align: bottom;
+	
 }
 
 div.field_options {
@@ -69,6 +71,18 @@ div.field_options h1 {
 	margin-right: 2px;
 	padding: 0px;
 	text-align: center;
+}
+
+.mcFieldResources{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;	
+}
+
+.mcFieldResourcee{
+	display:block;
+	
 }
 
 

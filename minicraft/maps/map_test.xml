@@ -4,70 +4,70 @@
   <spieler>
     <name>test</name>
     <id>$5$saltycrackers!!!$govbWAR6.WD6rQJbD6ud6.jBGoWly/4TRkUGVp7o835</id>
-    <zeitstempel>1465756822</zeitstempel>
+    <zeitstempel>1465804464</zeitstempel>
   </spieler>
   <ressourcen><ressource id="1">50</ressource><ressource id="2">50</ressource><ressource id="3">50</ressource><ressource id="7">2002</ressource></ressourcen>
   <reihe>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-  </reihe>
-  <reihe>
     <feld>1</feld>
     <feld>2</feld>
+    <feld>3</feld>
     <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+  </reihe>
+  <reihe>
     <feld>2</feld>
     <feld>2</feld>
     <feld>2</feld>
     <feld>3</feld>
-  </reihe>
-  <reihe>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-  </reihe>
-  <reihe>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
     <feld>2</feld>
     <feld>3</feld>
-    <feld>3</feld>
-  </reihe>
-  <reihe>
-    <feld>4</feld>
-    <feld>4</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
-    <feld>2</feld>
     <feld>2</feld>
   </reihe>
   <reihe>
     <feld>2</feld>
-    <feld>4</feld>
     <feld>2</feld>
-    <feld>5</feld>
-    <feld>5</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
     <feld>2</feld>
     <feld>2</feld>
   </reihe>
   <reihe>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>4</feld>
+    <feld>4</feld>
+    <feld>2</feld>
+  </reihe>
+  <reihe>
+    <feld>4</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+  </reihe>
+  <reihe>
+    <feld>2</feld>
     <feld>5</feld>
     <feld>2</feld>
     <feld>2</feld>
     <feld>2</feld>
     <feld>2</feld>
+    <feld>5</feld>
+  </reihe>
+  <reihe>
     <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>2</feld>
+    <feld>5</feld>
     <feld>2</feld>
   </reihe>
 </karte>

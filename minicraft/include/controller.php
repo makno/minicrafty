@@ -88,7 +88,6 @@ class Controller{
 			// ----> Anzeige der Karte und eventuell Anfragen über AJAX
 			///////////////////////////////////////////////////////////
 			case IConfiguration::MC_STATE_MAP:
-				$this->update();
 				if($this->action==IConfiguration::MC_ACTION_AJAX)
 					$this->handleAjax();
 				else
@@ -104,8 +103,13 @@ class Controller{
 			// ----> Generieren einer neuen Karte
 			/////////////////////////////////////
 			case IConfiguration::MC_STATE_MAP_GENERATE:
-				$this->model->getMap()->generate();
-				$this->view->showHTML("showMap");
+				$isGenerated = $this->model->getMap()->generate();
+				if($isGenerated){
+					$this->setState(IConfiguration::MC_STATE_MAP);
+					$this->view->showHTML("showMap");
+				}else{ 
+					$this->view->showHTML("showLogin");
+				}
 				break;
 				
 			// ----> Fehlerfall - Falsches Kennwort
@@ -176,23 +180,6 @@ class Controller{
 	
 	////////////////////////////////////////// AJAX ENDE ////////////
 	
-	
-	/////////////////////////////////////////// UPDATE /////////////
-	
-	private function update($forcenextround=false){
-		$dirMaps = IConfiguration::MC_LOC_XML_MAPS;
-		$mapfiles= scandir($dirMaps);
-		if($mapfiles!=FALSE){
-			foreach($mapfiles as $mapfile){
-				$file_parts = pathinfo($mapfile);
-				if($file_parts['extension']=="xml")
-					Map::loadFile($mapfile,$this->getModel())->update();
-			}
-		}	
-	}
-	
-	
-	/////////////////////////////////////////// UPDATE ENDE ////////
 	
 	// POST Parameter auslesen -> Benutzer und AJAX Daten
 	private function checkPOST(){

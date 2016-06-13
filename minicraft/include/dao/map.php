@@ -129,6 +129,10 @@ class Map{
 	
 	public function generate(){
 		global $config;
+		
+		if(file_exists(IConfiguration::MC_LOC_XML_MAPS . "/" . $this->getMapFileName()))
+			return false;
+		
 		// Eine Instanz der DOMImplementation Klasse
 		$imp = new DOMImplementation;
 		// Dokumententyp erstellen
@@ -208,6 +212,7 @@ class Map{
 			}
 			$this->dom->appendChild($elementMap);
 			$this->save();
+			return true;
 	}
 	
 	private function checkMapFile(){

@@ -5,13 +5,22 @@
 	<feld id="1" initial="1"  maximum="1">
 		<name>Burg</name>
 		<bild datei="img/fields/basis.gif"/>
-		<ressource id="7">1</ressource><!-- Ressource 7 => Platinum -->
+		<ressource id="7">5</ressource><!-- Ressource 7 => Platinum -->
 	</feld>
 	<feld id="2" initial="0">
 		<name>Ebene</name>
 		<bild datei="img/fields/ebene.gif"/>
+		<kosten>
+			<ressource id="1">50</ressource> 
+			<ressource id="2">25</ressource> 
+			<ressource id="3">15</ressource> 
+			<ressource id="4">15</ressource> 
+			<ressource id="5">15</ressource> 
+		</kosten>
 		<!-- Bauen: Feld -->
 		<upgrade>3</upgrade>
+		<!-- Bauen: Wald -->
+		<upgrade>4</upgrade>
 		<!-- Bauen: Brauerei -->
 		<upgrade>11</upgrade>
 		<!-- Bauen: Markt -->
@@ -20,29 +29,52 @@
 	<feld id="3" initial="3">
 		<name>Feld</name>
 		<bild datei="img/fields/feld.gif"/>
+		<ressource id="1">1</ressource><!-- Ressource 1 => Nahrung -->
 		<kosten>
-			<ressource id="1">10</ressource> 
-			<ressource id="2">10</ressource> 
+			<ressource id="1">5</ressource> 
+			<ressource id="2">1</ressource> 
 		</kosten>
 		<!-- Bauen: Farm -->
 		<upgrade>6</upgrade>
+		<!-- Bauen: Wald -->
+		<upgrade>4</upgrade>
+		<!-- Bauen: Brauerei -->
+		<upgrade>11</upgrade>
+		<!-- Bauen: Markt -->
+		<upgrade>12</upgrade>
 	</feld>
 	<feld id="4" initial="3">
 		<name>Wald</name>
 		<bild datei="img/fields/wald.gif"/>
+		<ressource id="1">1</ressource><!-- Ressource 1 => Nahrung -->
+		<ressource id="2">1</ressource><!-- Ressource 2 => Holz -->
+		<kosten>
+			<ressource id="1">20</ressource> 
+			<ressource id="2">5</ressource> 
+		</kosten>
 		<!-- Bauen: Holzfäller -->
 		<upgrade>7</upgrade>
+		<!-- Bauen: Ebene -->
+		<upgrade>2</upgrade>
 	</feld>
-	<feld id="5" initial="3">
+	<feld id="5" initial="7">
 		<name>Berg</name>
 		<bild datei="img/fields/berg.gif"/>
+		<ressource id="3">1</ressource><!-- Ressource 3 => Steine -->
+		<kosten>
+			<ressource id="1">25</ressource> 
+			<ressource id="2">25</ressource> 
+			<ressource id="3">15</ressource> 
+			<ressource id="4">15</ressource> 
+			<ressource id="5">15</ressource> 
+		</kosten>
 		<!-- Bauen: Steinbruch -->
 		<upgrade>8</upgrade>
 	</feld>
 	<feld id="6">
 		<name>Farm</name>
 		<bild datei="img/fields/farm.gif"/>
-		<ressource id="1">1</ressource><!-- Ressource 1 => Nahrung -->
+		<ressource id="1">5</ressource><!-- Ressource 1 => Nahrung -->
 		<kosten>
 			<ressource id="1">5</ressource> 
 			<ressource id="2">10</ressource> 
@@ -51,46 +83,56 @@
 		<!-- Bauen: Upgrade -->
 		<!-- Bauen: Stall -->
 		<upgrade>9</upgrade>
+		<!-- Bauen: Ebene -->
+		<upgrade>2</upgrade>
 	</feld>
 	<feld id="7">
 		<name>Holzfäller</name>
 		<bild datei="img/fields/holzfaeller.gif"/>
-		<ressource id="2">1</ressource><!-- Ressource 2 => Holz -->
+		<ressource id="2">5</ressource><!-- Ressource 2 => Holz -->
 		<kosten>
 			<ressource id="1">3</ressource> 
 			<ressource id="2">5</ressource> 
 			<ressource id="3">1</ressource>
 		</kosten>
 		<!-- Bauen: Upgrade -->
+		<!-- Bauen: Ebene -->
+		<upgrade>2</upgrade>
 	</feld>
 	<feld id="8">
 		<name>Steinbruch</name>
 		<bild datei="img/fields/steinmetz.gif"/>
-		<ressource id="3">1</ressource><!-- Ressource 2 => Stein -->
+		<ressource id="3">5</ressource><!-- Ressource 2 => Stein -->
 		<kosten>
-			<ressource id="1">10</ressource> 
-			<ressource id="2">15</ressource> 
-			<ressource id="3">10</ressource>
+			<ressource id="1">15</ressource> 
+			<ressource id="2">25</ressource> 
+			<ressource id="3">5</ressource>
 		</kosten>
 		<!-- Bauen: Upgrade -->
 		<!-- Bauen: Eisenhütte -->
 		<upgrade>10</upgrade>
+		<!-- Bauen: Berg -->
+		<upgrade>5</upgrade>
 	</feld>
 	<feld id="9">
 		<name>Stall</name>
 		<bild datei="img/fields/stall.gif"/>
-		<ressource id="4">1</ressource><!-- Ressource 4 => Pferde -->
+		<ressource id="1">5</ressource><!-- Ressource 1 => Nahrung -->
+		<ressource id="4">2</ressource><!-- Ressource 4 => Pferde -->
 		<kosten>
 			<ressource id="1">20</ressource> 
 			<ressource id="2">25</ressource> 
 			<ressource id="3">15</ressource>
 		</kosten>
 		<!-- Bauen: Upgrade -->
+		<!-- Bauen: Ebene -->
+		<upgrade>2</upgrade>
 	</feld>
 	<feld id="10">
 		<name>Eisenhütte</name>
 		<bild datei="img/fields/eisenhuette.gif"/>
-		<ressource id="5">1</ressource><!-- Ressource 5 => Eisen -->
+		<ressource id="3">3</ressource><!-- Ressource 3 => Steine -->
+		<ressource id="5">3</ressource><!-- Ressource 5 => Eisen -->
 		<kosten>
 			<ressource id="1">30</ressource> 
 			<ressource id="2">35</ressource> 
@@ -98,11 +140,14 @@
 			<ressource id="4">2</ressource>
 		</kosten>
 		<!-- Bauen: Upgrade -->
+		<!-- Bauen: Berg -->
+		<upgrade>5</upgrade>
 	</feld>
 	<feld id="11">
 		<name>Brauerei</name>
 		<bild datei="img/fields/brauerei.gif"/>
-		<ressource id="6">1</ressource><!-- Ressource 6 => Bier & Cookies -->
+		<ressource id="1">2</ressource><!-- Ressource 1 => Nahrung -->
+		<ressource id="6">3</ressource><!-- Ressource 6 => Bier & Cookies -->
 		<kosten>
 			<ressource id="1">50</ressource> 
 			<ressource id="2">40</ressource> 
@@ -110,16 +155,22 @@
 			<ressource id="4">5</ressource>
 		</kosten>
 		<!-- Bauen: Upgrade -->
+		<!-- Bauen: Ebene -->
+		<upgrade>2</upgrade>
 	</feld>
 	<feld id="12" maximum="1">
 		<name>Markt</name>
 		<bild datei="img/fields/markt.gif"/>
+		<ressource id="7">1</ressource><!-- Ressource 7 => Platinum -->
 		<kosten>
 			<ressource id="1">20</ressource> 
 			<ressource id="2">40</ressource> 
 			<ressource id="3">10</ressource>
 			<ressource id="4">10</ressource>
 		</kosten>
+		<!-- Bauen: Upgrade -->
+		<!-- Bauen: Ebene -->
+		<upgrade>2</upgrade>
 	</feld>
 	<!-- Laibacher & Pansi - uncomment if brave enough
 	<feld id="13">
