@@ -78,6 +78,9 @@ app.controller("mcMapCtrl", function($scope,$http, $interval){
 					$scope.showRoundcircle();
 					$scope.getResourcesPlayer();
 					$scope.timeStopped = false;
+				}else{
+					alert(response.data.message);
+					location.reload();
 				}
 		    });
 		}
@@ -130,6 +133,9 @@ app.controller("mcMapCtrl", function($scope,$http, $interval){
 			if(response.data.success){
 				$scope.getResourcesPlayer();
 				$scope.updateField(fieldid, upgradeid);	
+			}else{
+				alert(response.data.message);
+				location.reload();
 			}
 	    });
 	};
@@ -194,6 +200,8 @@ app.controller("mcMapCtrl", function($scope,$http, $interval){
 				}
 			}else{
 				$scope.map.clearResources();
+				alert(response.data.message);
+				location.reload();
 			}
 	    });
 	};

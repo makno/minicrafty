@@ -5,9 +5,9 @@ if(! defined('MINICRAFT')) die;
 class Controller{
 	
 	// Session
-	private $login;
+	private $login = false;
 	// Wie oft ein Benutzer versucht hat sich anzumelden
-	private $login_count;
+	private $login_count = 0;
 	// Zustand der Webanwendung
 	private $state = IConfiguration::MC_STATE_NONE;
 	// Aktuelle Aktion eines Benutzers
@@ -41,10 +41,24 @@ class Controller{
 		
 		// Setzt Status auf Basis einer Aktion
 		switch($this->action){
+			
 			// Generieren einer neuen karte
 			case IConfiguration::MC_ACTION_MAP_NEW:
 				$this->state = IConfiguration::MC_STATE_MAP_GENERATE;
-			break;
+				break;
+			
+			// Ajax abfangen
+			case IConfiguration::MC_ACTION_AJAX:
+				if(!$this->login){
+					$ret = array('success'=>false);
+					$ret["message"] = "Die Sitzung ist abgelaufen!";
+					// Im HTTP header JSOn einstellen
+					header('Content-Type: application/json');
+					// Array als JSON ausgeben (keine View notwendig)
+					echo json_encode($ret);
+					return;
+				}
+				break;
 			
 			default:
 		}
@@ -144,20 +158,34 @@ class Controller{
 				case IConfiguration::MC_AJAX_METHOD_UPDATE_STATISTICS:
 					$updateOK = $this->getModel()->getMap()->update(true);
 					$ret['success'] = $updateOK;
+					if(!$ret['success']){
+						$ret['message'] = 'Aktualisieren der Spielerdaten fehlgeschlagen!';
+					}
 					break;
 				// ----> Resourcen des Spieleres bereitstellen	
 				case IConfiguration::MC_AJAX_METHOD_GET_RESOURCES:
-					$ret['success'] = true;
-					$ret['result'] =  json_encode($this->getModel()->getMap()->getResources());
+					$ret['success'] = isset($this->login);
+					if($ret['success']){
+						$ret['result'] =  json_encode($this->getModel()->getMap()->getResources());
+					}else{
+						$ret['message'] = 'Abfrage der Spielerressourcen fehlgeschlagen!';
+					}
 					break;
 				//  ----> Ein Upgrade kaufen	
 				case IConfiguration::MC_ACTION_AJAX_METHOD_BUY:
 					$ret['success'] = $this->buyUpgrade();
+					if(!$ret['success']){
+						$ret['message'] = 'Upgrade des Feldes fehlgeschlagen!';
+					}
 					break;
 				//  ----> Zeitabfrage
 				case IConfiguration::MC_ACTION_AJAX_METHOD_TIME:
-					$ret['success'] = true;
-					$ret['result'] = $this->getModel()->getMap()->setTime();
+					$ret['success'] = isset($this->login);
+					if($ret['success']){
+						$ret['result'] = $this->getModel()->getMap()->setTime();
+					}else{
+						$ret['message'] = 'Abfrage der Spielzeit fehlgeschlagen!';
+					}	
 					break;
 				default:
 			}
@@ -166,6 +194,7 @@ class Controller{
 		header('Content-Type: application/json');
 		// Array als JSON ausgeben (keine View notwendig)
 		echo json_encode($ret);
+		return;
 	}
 	
 	////////////////////////////////////////// AJAX METHODEN ////////

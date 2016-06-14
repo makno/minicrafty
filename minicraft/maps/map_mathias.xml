@@ -4,29 +4,29 @@
   <spieler>
     <name>mathias</name>
     <id>$5$saltycrackers!!!$N7UAsehtE7VC1TTTrVp/VyEZni0D.BQmCkhZ.WijS3D</id>
-    <zeitstempel>1465806667</zeitstempel>
+    <zeitstempel>1465916744</zeitstempel>
   </spieler>
-  <ressourcen><ressource id="1">286</ressource><ressource id="2">140</ressource><ressource id="3">11</ressource><ressource id="7">125</ressource><ressource id="4">27</ressource><ressource id="5">25</ressource><ressource id="6">22</ressource></ressourcen>
+  <ressourcen><ressource id="1">443</ressource><ressource id="2">320</ressource><ressource id="3">5</ressource><ressource id="7">161</ressource><ressource id="4">11</ressource><ressource id="5">13</ressource><ressource id="6">40</ressource></ressourcen>
   <reihe>
     <feld>1</feld>
     <feld>11</feld>
     <feld>6</feld>
     <feld>6</feld>
     <feld>6</feld>
-    <feld>3</feld>
-    <feld>3</feld>
+    <feld>6</feld>
+    <feld>6</feld>
   </reihe>
   <reihe>
     <feld>12</feld>
-    <feld>6</feld>
-    <feld>6</feld>
-    <feld>3</feld>
-    <feld>3</feld>
-    <feld>3</feld>
-    <feld>3</feld>
-  </reihe>
-  <reihe>
     <feld>9</feld>
+    <feld>6</feld>
+    <feld>6</feld>
+    <feld>7</feld>
+    <feld>7</feld>
+    <feld>7</feld>
+  </reihe>
+  <reihe>
+    <feld>7</feld>
     <feld>7</feld>
     <feld>7</feld>
     <feld>7</feld>
@@ -39,13 +39,13 @@
     <feld>7</feld>
     <feld>8</feld>
     <feld>8</feld>
-    <feld>7</feld>
+    <feld>2</feld>
     <feld>7</feld>
     <feld>10</feld>
   </reihe>
   <reihe>
     <feld>6</feld>
-    <feld>3</feld>
+    <feld>9</feld>
     <feld>3</feld>
     <feld>3</feld>
     <feld>3</feld>
